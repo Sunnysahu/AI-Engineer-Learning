@@ -1,0 +1,37 @@
+Open Powershell then use CMD : cd C:\Users\$env:USERNAME
+
+Get AI API KEY
+
+GET Qdrant API KEY and ENDPOINT
+
+Install UV with CMD : powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+then add it to global path
+
+open Powershell and Execute this
+
+```
+$userPath = [Environment]::GetEnvironmentVariable("Path", "User")
+$uvPath = "C:\Users\sunny\.local\bin"
+
+if (($userPath -split ';') -notcontains $uvPath) {
+    [Environment]::SetEnvironmentVariable("Path", "$userPath;$uvPath", "User")
+}
+```
+
+Setup Git global Variable
+
+Check all setup 
+1. git --version
+2. uv --version
+3. code --version
+4. python --version
+
+Steps tp create a project and run it
+
+to create project : uv init {project name}
+chage to project 
+then : uv venv --python 3.11
+then :  .\.venv\Scripts\activate.ps1 
+
+create a file : code {filename}
