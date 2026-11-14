@@ -43,5 +43,5 @@ am\day6> (Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned) ; (&
 
 
 
- uv add groq python-dotenv   
- uv add python-docx             
+uv add groq python-dotenv
+uv add python-docx  
