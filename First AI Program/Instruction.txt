@@ -35,3 +35,13 @@ then : uv venv --python 3.11
 then :  .\.venv\Scripts\activate.ps1 
 
 create a file : code {filename}
+
+
+If policy changed then run the CMD 
+
+am\day6> (Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned) ; (& "d:\Program\AI\AI Engineer\First AI Program\day1\.venv\Scripts\Activate.ps1")
+
+
+
+ uv add groq python-dotenv   
+ uv add python-docx             
